@@ -57,7 +57,7 @@ def find_team_owned_by(class_name, output_csv_path):
         # If OwnedBy is 'Unknown' or class name not found, look up the corresponding module in the processed DataFrame
         if not output_entry.empty:
             module = output_entry.iloc[0]['Module']
-            normalized_entry = final_results[final_results['Module'] == module3]
+            normalized_entry = final_results[final_results['Module'] == module]
             
             if not normalized_entry.empty:
                 return normalized_entry.iloc[0]['OwnedBy']
