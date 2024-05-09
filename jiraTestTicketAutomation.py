@@ -30,7 +30,7 @@ def find_team_owned_by(class_name, output_csv_path):
 
     # Iterate over each unique module
     for module in df['Module'].unique():
-        module_group = grouped[grouped['Module'] == module]
+        module_group = grouped[grouped['Module'] == module1]
 
         if module_group.empty:
             continue
